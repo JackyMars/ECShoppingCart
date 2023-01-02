@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.oy.ecshoppingcart.presentation.ui.home.HomeScreen"
+        android:label="HomeScreen" >
+        <action
+            android:id="@+id/to_bannerScreen"
+            app:destination="@id/bannerScreen" />
+        <action
+            android:id="@+id/to_shoppingCartScreen"
+            app:destination="@id/shoppingCartScreen" />
+        <action
+            android:id="@+id/_to_productScreen"
+            app:destination="@id/productScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/bannerScreen"
+        android:name="com.oy.ecshoppingcart.presentation.ui.banner.BannerScreen"
+        android:label="BannerScreen" />
+    <fragment
+        android:id="@+id/productScreen"
+        android:name="com.oy.ecshoppingcart.presentation.ui.product.ProductScreen"
+        android:label="ProductScreen" />
+    <fragment
+        android:id="@+id/shoppingCartScreen"
+        android:name="com.oy.ecshoppingcart.presentation.ui.shoppingcart.ShoppingCartScreen"
+        android:label="ShoppingCartScreen" />
+</navigation>
